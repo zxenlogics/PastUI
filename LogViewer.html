@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>PAST - Pfizer Analytical Support Tool</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/past.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/vendor/jquery-1.10.1.min.js"></script>
+        
+        <script>
+            var appSelection = function ()
+            {
+                alert('loaded');
+            };
+
+            $(function ()
+            {
+                $('#application-select').click(function ()
+                {
+                    $(this).html($(this).attr('data-index'));
+                });
+
+                $('#grid-container').fadeIn(1500);
+            });
+
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <div id="logo">
+                    <h1 class="title"><a href="index.html">PAST - Pfizer Analytical Support Tool </a></h1>
+                    <span class="release-version">Release v1.0 Alpha</span>
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li><a class="first" href="Index.html">Home</a></li>
+                        <li><a href="LogViewer.html">Logs</a></li>
+                        <li><a href="Reports.html">Analytics</a></li>
+                        <li><a class="last" href="About.html">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div id="log-viewer" class="main-content">
+            <div class="main wrapper clearfix">
+
+            <!-- render body here -->
+
+            <div id="search-container">
+                <ul>
+                    <li><span id="application-select" data-index="eSamples">Pac</span></li>
+                    <li><span>Prod</span></li>
+                    <li> <input type="text" id="keyword" /> </li>
+                    <li><datalist></datalist></li>
+                </ul>
+                <img class="go" src="img/go.png" alt="go">
+            </div>
+            <div id="grid-container">
+ 
+                <table>
+                    <caption class="titleBar">PAST Log Viewer</caption>
+                    <thead>
+                        <tr class="header">
+                            <td>Log Id</td>
+                            <td>Time Stamp</td>
+                            <td>Type</td>
+                            <td>Machine</td>
+                            <td>Message</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Log Id</td>
+                            <td>Time Stamp</td>
+                            <td>Type</td>
+                            <td>Machine</td>
+                            <td>Message</td>
+                        </tr>
+                        <tr>
+                            <td>Log Id</td>
+                            <td>Time Stamp</td>
+                            <td>Type</td>
+                            <td>Machine</td>
+                            <td>Message</td>
+                        </tr>
+                        <tr>
+                            <td>Log Id</td>
+                            <td>Time Stamp</td>
+                            <td>Type</td>
+                            <td>Machine</td>
+                            <td>Message</td>
+                        </tr>
+                        <tr>
+                            <td>Log Id</td>
+                            <td>Time Stamp</td>
+                            <td>Type</td>
+                            <td>Machine</td>
+                            <td>Message</td>
+                        </tr>
+                        <tr>
+                            <td>Log Id</td>
+                            <td>Time Stamp</td>
+                            <td>Type</td>
+                            <td>Machine</td>
+                            <td>Message</td>
+                        </tr>
+                        <tr>
+                            <td>Log Id</td>
+                            <td>Time Stamp</td>
+                            <td>Type</td>
+                            <td>Machine</td>
+                            <td>Message</td>
+                        </tr>
+                        <tr>
+                            <td>Log Id</td>
+                            <td>Time Stamp</td>
+                            <td>Type</td>
+                            <td>Machine</td>
+                            <td>Message</td>
+                        </tr>
+                        <tr>
+                            <td>Log Id</td>
+                            <td>Time Stamp</td>
+                            <td>Type</td>
+                            <td>Machine</td>
+                            <td>Message</td>
+                        </tr>
+                        <tr>
+                            <td>Log Id</td>
+                            <td>Time Stamp</td>
+                            <td>Type</td>
+                            <td>Machine</td>
+                            <td>Message</td>
+                        </tr>
+                        <tr>
+                            <td>Log Id</td>
+                            <td>Time Stamp</td>
+                            <td>Type</td>
+                            <td>Machine</td>
+                            <td>Message</td>
+                        </tr>
+                        <tr>
+                            <td>Log Id</td>
+                            <td>Time Stamp</td>
+                            <td>Type</td>
+                            <td>Machine</td>
+                            <td>Message</td>
+                        </tr>
+                        <tr>
+                            <td>Log Id</td>
+                            <td>Time Stamp</td>
+                            <td>Type</td>
+                            <td>Machine</td>
+                            <td>Message</td>
+                        </tr>
+                        <tr>
+                            <td>Log Id</td>
+                            <td>Time Stamp</td>
+                            <td>Type</td>
+                            <td>Machine</td>
+                            <td>Message</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- render body here -->
+
+
+             </div>
+        </div> <!-- #main-content -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>MCM Apps</h3>
+                <section>
+                    <ul>
+                        <li><a href="#">Pfizer Account Center - Prod</a></li>
+                        <li><a href="#">eSamples - Prod</a></li>                    
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li><a href="#">Pfizer Account Center - Staging</a></li>
+                        <li><a href="#">eSamples - Staging</a></li>                    
+                    </ul>
+                </section>
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
