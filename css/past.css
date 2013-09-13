@@ -1,30 +1,4 @@
 
-div#past-logo {
-    position: absolute;
-    left: 666px;
-    top: 225px;
-    width: 185px;
-    height: 185px;
-    cursor: pointer;
-    background: url("/img/features-icons-sprite.png") no-repeat -252px -30px;
-    z-index: 5;
-    display: block;
-}
-
-
-div#past-logo-blue {
-    position: absolute;
-    left: 732px;
-    top: 82px;
-    width: 239px;
-    height: 241px;
-    cursor: pointer;
-    background: url("/img/features-icons-sprite.png") no-repeat 725px -9px;
-    z-index: 5;
-    display: none;
-}
-
-
 /* ==========================================================================
    Grid styles
    ========================================================================== */
@@ -40,8 +14,7 @@ div#past-logo-blue {
 #grid-container table
 {
     width: 100%;
-    border: 1px solid silver;
-    
+    border: 1px solid silver;    
 }
 #grid-container table caption.titleBar
 {
@@ -115,15 +88,15 @@ div#past-logo-blue {
     width: 160px
 }
 
-/******************
-    About page styles    
+/***********************
+    About    
 ************************/
 
 #about-container
 {
-    margin: 0 auto;
+    margin: 72px auto 0 auto;
     padding: 0;
-    width: 100%;
+    width: 85%;
     height: 600px;
     border: 1px solid silver;
     position: relative;  
@@ -131,7 +104,6 @@ div#past-logo-blue {
     border-radius: 18px 18px;
     display: none;
 }
-
 #about-container .past
 {
     background: none repeat scroll 0 0 #000;
@@ -195,7 +167,6 @@ div#past-logo-blue {
 {
     opacity: 1;
     background: yellowgreen;
-    /*outline:  2px solid #ffd800;*/
 }
 #about-container .past:hover h2 { font-size: 1.4em; text-align: center;  color: #EBEAE1; }
 #about-container .logs:hover {  }
@@ -204,8 +175,5 @@ div#past-logo-blue {
  
     #about-container .past h1 { font-size: 1.1em; }
     #about-container .past h2{ font-size: .9em; }
-    #about-container .past:hover h2 {
-        font-size: .8em;
-    }
-       
+    #about-container .past:hover h2 { font-size: .8em; }       
 }
