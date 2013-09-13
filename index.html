@@ -44,28 +44,30 @@
 
 
                 <div id="start-menu">
-                    <ul>
-                        <li class="pac "><a href="#"><img src="img/pac-logo-64x64.png" alt="pac logo"></a></li>
-                        <li class="samples "><a href="#"><img width="64" height="64" src="img/sample-logo.png" alt="sample logo"></a></li>
-                        <li class="ccui selected"><a href="#"><img src="img/ccui-logo-64x64.png" alt="ccui logo"></a></li>
+                    <ul class="apps">
+                        <li class="pac" data-app="pac" title="PAC Log Entries"><a href="#"><img src="img/pac-logo-64x64.png" alt="pac logo"></a></li>
+                        <li class="samples" data-app="samples" title="eSamples Log Entries"><a href="#"><img width="64" height="64" src="img/sample-logo.png" alt="sample logo"></a></li>
+                        <li class="ccui selected" data-app="ccui" title="CCUI Log Entries"><a href="#"><img src="img/ccui-logo-64x64.png" alt="ccui logo"></a></li>
                     </ul>
-                    <div id="pac-options" class="log-options ">
+                    <div id="pac-options" data-app="pac" class="log-options ">
                         <ul>
                             <li class="prod"><img src="img/prod-database.png" alt="prod db"></li>
                             <li><img src="img/stg-database.png" alt="stg db"></li>
                             <li><img src="img/dev-database.png" alt="dev db"></li>
                         </ul>    
+                        <p class="env-info">Produciton, Stg, Dev logs</p>
                         <div class="info">PAC Log Sources</div>
                     </div>
-                    <div id="samples-options" class="log-options ">
+                    <div id="samples-options" data-app="samples" class="log-options ">
                         <ul>
-                            <li class="prod"><img src="img/prod-database.png" alt="prod db"></li>
-                            <li><img src="img/stg-database.png" alt="stg db"></li>
-                            <li><img src="img/dev-database.png" alt="dev db"></li>
+                            <li class="prod"><img src="img/prod-database.png" alt="Prod db" title="prod db"></li>
+                            <li><img src="img/stg-database.png" alt="stg db" title="Stage db"></li>
+                            <li><img src="img/dev-database.png" alt="dev db" title="Dev db"></li>
                         </ul>
+                        <p class="env-info">Produciton, Stg, Dev logs</p>
                         <div class="info">eSamples Log Sources</div>
                     </div>
-                    <div id="ccui-options" class="log-options selected">
+                    <div id="ccui-options" data-app="ccui" class="log-options selected">
                         <ul>
                             <li class="prod"><img src="img/prod-database.png" alt="prod db"></li>
                             <li><img src="img/stg-database.png" alt="stg db"></li>
@@ -74,7 +76,7 @@
                         <p class="env-info">Produciton logs - this should change as you hover over the environment icons list</p>
                         <div class="info">CCUI Log Sources</div>                   
                     </div>     
-                    <p class="app-info">View Call Center Logs - this should change as you hover over the apps icons on the left</p>               
+                    <p class="app-info"></p>               
                 </div>
 
             </div> <!-- #main -->
@@ -100,7 +102,7 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
+        <script src="js/vendor/jquery-ui-1.10.3/ui/jquery.ui.tooltips.js"></script>
         <script src="js/main.js"></script>
 
         <script>
@@ -111,10 +113,47 @@
         </script>
 
         <script>
+            function wireUpStartMenu()
+            {
+                $('ul.apps li').click(function ()
+                {
+                    var app = $(this).attr('data-app');
+           
+                    $('ul.apps li').each(function ()
+                    {
+                        $(this).removeClass('selected');
+                    })
+                    $(this).addClass('selected');
+                    $('.log-options').each(function ()
+                    {
+                        $(this).removeClass('selected');
+                    });
+                    $("div[data-app='" + app + "']").addClass('selected');
+                });
+            }
+
             $(function ()
-            {                
+            {
                 $('#start-menu').fadeIn(1000);
+                wireUpStartMenu();
+
+                $('ul.apps li').hover(function ()
+                {
+                    var app = $(this).attr('data-app');
+                    $('.app-info').html('View ' + app + ' Logs');
+
+                });
+
+                //$('ul.apps li').hover(function ()
+                //{
+                //    var app = $(this).attr('data-app');
+                //    $('.app-info').html('View ' + app + ' Logs');
+
+                //});
+                $( document ).tooltip();
             });
+
+
         </script>
     </body>
 </html>
