@@ -41,21 +41,17 @@
         <div class="main-content">
             <div class="main wrapper clearfix">
             <!-- render body starts here -->
-
+                <span id="sizing"></span>
             <div id="about-container">
-            <article class="past">
-                <header>
-                    <h2>PAST - Pfizer Analytical Support Tool</h2>
-                </header>
-                <section>
-                    <!--<div id="past-logo-blue" style="background-position: -0px -243px;"></div>-->
-                    <ul>
-                        <li>Provides support through log files that you can slice and dice.</li>
-                        <li>Provides analytics reports on the fly.</li>
-                        <li>It captures the present state of application in real-time and allows you to look at in in the PAST.</li>
-                    </ul>
-                </section>
-            </article>
+                <article class="past">
+                    <header>
+                        <h1>PAST</h1>
+                    </header>
+                    <section>
+                        <h2>Pfizer Analytical Support Tool</h2>
+                        <h3>A T.E.D. Project</h3>
+                    </section>
+                </article>
                 <article class="logs">
                         <header>
                             <h2>Browse any logs file with ease</h2>
@@ -68,6 +64,21 @@
                             connection information or credentials. Removing the dependency on SQL Management Studio allows the support staff to access logs and troubleshoot
                             from any computer instantly.
                         </p>                                
+                </article>
+                <article class="what">
+                    <header>
+                        <h2>What is PAST?</h2>
+                    </header>
+                    <section>
+                        <!--<div id="past-logo-blue" style="background-position: -0px -243px;"></div>-->
+                        <ul>
+                            <li>Developed from a need for efficiency</li>
+                            <li>Developed for Technology Exploration and Development (T.E.D)</li>
+                            <li>Provides support through log files that you can slice and dice</li>
+                            <li>Provides analytics reports on the fly </li>
+                            <li>It captures the present state of application in real-time and allows you to look at in in the PAST.</li>
+                        </ul>
+                    </section>
                 </article>
                 <article class="analytics">
                     <header>
@@ -131,6 +142,14 @@
                 $('.past').fadeIn(2000);
                 $('.logs').fadeIn(7000);
                 $('.analytics').fadeIn(15000);
+
+                $(window).resize(function() {
+                  // This will execute whenever the window is resized
+
+                  $('#sizing').html($(window).width()); // New width
+                  //$(window).height(); // New height
+                });
+
             });
         </script>
     </body>

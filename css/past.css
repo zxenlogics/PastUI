@@ -134,6 +134,27 @@ div#past-logo-blue {
 
 #about-container .past
 {
+    background: none repeat scroll 0 0 #000;
+    font-size: 1.2em;
+    color: yellowgreen;
+    height: 229px;
+    margin: 0;
+    padding: 0 1%;
+    width: 37%;
+    border-top-left-radius: 15px;
+    display: none;
+}
+#about-container .past h1 { font-size: 3em; letter-spacing: .8em;}
+#about-container .past h2 { color: #D7D4C3; }
+#about-container .past h3 
+{
+    color: #8C897A;
+    font-size: 0.7em;
+    margin-right: 20px;
+    text-align: right;    
+}
+#about-container .what
+{
     background: none repeat scroll 0 0 lightblue;
     font-size: 82%;
     height: 229px;
@@ -149,8 +170,8 @@ div#past-logo-blue {
     font-size: 90%;
     height: 600px;
     margin: 0;
-    padding: 0 17px;
-    width: 58%;
+    padding: 0 1%;
+    width: 59%;
     float: right;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -164,9 +185,9 @@ div#past-logo-blue {
     height: 369px;
     left: 0;
     margin: 0;
-    padding: 0 23px;
+    padding: 0 1%;
     position: absolute;
-    width: 35%;
+    width: 37%;
     border-bottom-left-radius: 15px;
     display: none;
 }
@@ -174,5 +195,17 @@ div#past-logo-blue {
 {
     opacity: 1;
     background: yellowgreen;
-    border:  1px solid #ffd800;
+    /*outline:  2px solid #ffd800;*/
+}
+#about-container .past:hover h2 { font-size: 1.4em; text-align: center;  color: #EBEAE1; }
+#about-container .logs:hover {  }
+
+@media only screen and (max-width: 810px) {
+ 
+    #about-container .past h1 { font-size: 1.1em; }
+    #about-container .past h2{ font-size: .9em; }
+    #about-container .past:hover h2 {
+        font-size: .8em;
+    }
+       
 }

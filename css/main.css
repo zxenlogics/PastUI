@@ -181,11 +181,7 @@ nav a.first:hover { border-top-left-radius: 6px 6px; }
    Author's custom styles
    ========================================================================== */
 
-/*h1, h2 
-{
-    font-weight: normal;
-    color: #A1A1A1;          
-}*/
+p { margin: 0;}
 
 .title { color: #A1A1A1; }
 
