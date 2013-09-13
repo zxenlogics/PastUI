@@ -171,7 +171,28 @@
 #about-container .past:hover h2 { font-size: 1.4em; text-align: center;  color: #EBEAE1; }
 #about-container .logs:hover {  }
 
+/****************** Reports **********************/
 
+.report-container
+{
+    width: 90%;
+    height: 600px;
+    margin: 20px auto;
+    padding: 0;
+    outline: 1px dotted silver;
+}
+.report-container > div
+{
+    width: 50%;
+    height: 300px;
+    margin: 0;
+    outline: 1px dashed yellowgreen;
+    float: left;
+}
+.report-container > div:hover
+{
+    background: #EBEAE1;
+}
 
 /*************** JQGrid styles copied from ui.jqgrid.css ********/
 
