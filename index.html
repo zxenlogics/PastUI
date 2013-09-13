@@ -123,12 +123,12 @@
                     {
                         $(this).removeClass('selected');
                     })
-                    $(this).addClass('selected');
+                    $(this).addClass('selected').fadeIn(1000);	;
                     $('.log-options').each(function ()
                     {
                         $(this).removeClass('selected');
                     });
-                    $("div[data-app='" + app + "']").addClass('selected');
+                    $("div[data-app='" + app + "']").addClass('selected').css("display","none").fadeIn(600);	;
                 });
             }
 

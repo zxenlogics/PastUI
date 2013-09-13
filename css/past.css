@@ -171,6 +171,72 @@
 #about-container .past:hover h2 { font-size: 1.4em; text-align: center;  color: #EBEAE1; }
 #about-container .logs:hover {  }
 
+
+
+/*************** JQGrid styles copied from ui.jqgrid.css ********/
+
+#gbox_grid {
+     margin-top:1%;
+     margin-left:2%;
+     box-shadow: 0 10px 10px #A1A1A1;
+     border-radius: 5px;
+     behavior: url('/PIE/PIE.htc');
+     height:auto;
+     font-family: Segoe UI, Verdana;
+   }
+
+
+.ui-jqgrid-titlebar {
+    background:#667F55;
+    color: #1B1A15;
+    border-color:#D7D4C3;
+}
+
+/* table column header background color */
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default 
+{
+    background-color: #8C897A;
+    color: #FFFFFF;
+    border-bottom: 1px solid #D7D4C3;
+    font-family: Segoe UI, Verdana;
+}
+/* Header row table - the header row is a separate table */
+.ui-jqgrid .ui-jqgrid-htable 
+{
+    border: 1px solid #D7D4C3;
+}
+.ui-jqgrid .ui-jqgrid-htable th 
+{
+    border: 1px solid #D7D4C3;
+}
+
+table tbody tr:nth-child(even)
+{
+    background-color: #EBEAE1;
+}
+.ui-jqgrid .loading
+{
+    border-color:#6AC4EA;
+    color:#ff6a00;
+}
+/* table cells border color*/
+#grid.ui-jqgrid-btable tr td {
+    border-color:#D7D4C3;
+}
+
+input.ui-pg-input { width: auto; }
+table
+{
+    border-style: none;
+    border-collapse: separate;
+}
+table td
+{
+    border-style: none;
+}
+/*********** End JqGrid custom styles *****************/
+
+
 @media only screen and (max-width: 810px) {
  
     #about-container .past h1 { font-size: 1.1em; }
