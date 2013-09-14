@@ -186,9 +186,10 @@
     width: 50%;
     height: 300px;
     margin: 0;
-    outline: 1px dashed yellowgreen;
+    outline: 1px solid #DDD;
     float: left;
 }
+.report-container div:first-child { background: #7DC322; }
 .report-container > div:hover
 {
     background: #EBEAE1;
