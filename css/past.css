@@ -38,54 +38,54 @@
 {
     background-color: #EBEAE1;
 }
-#search-container
-{  
-    background: none repeat scroll 0 0 #4C4532;
-    border: 2px solid #CCCCCC;
+#search-container {
+    margin: 33px 0 5px 35px;
+    padding: 0;
+    width: 722px;
+    height: 29px;
+    color: #D7D4C3;
+    background: #4C4532;
+    border: 1px solid #999;
     box-shadow: 2px 2px 9px #333333;
-    height: 35px;
-    margin: 5px 30px;
-    width: 60%;
-    color:  #D7D4C3;
-    line-height: 5px;
     position: relative;
+    opacity: .6;
 }
-#search-container ul
-{
+#search-container ul {
     list-style-type: none;
+    width: 100%;
     margin: 0;
     padding: 0;
+    height: 25px;
 }
 #search-container ul li
 {
-    float: left;
-    width:  165px;
+  float: left;
+  /* border-right: 1px solid silver; */
+  width: auto;
+  height: 25px;
+  margin: 0;
+  padding: 0 5px 1px 2px;
+  line-height: 25px;  
 }
 #search-container .go
 {
     float: right;
-    height: 50px;
+    height: 46px;
     line-height: 18px;
     margin: 0 0 0 10px;
     padding: 0;
     position: absolute;
     right: -56px;
-    top: -9px;
+    top: -11px;
     width: 56px;
 }
 #search-container .go:hover
 {
     cursor: pointer;   
 }
-#search-container ul li span
+#search-container ul li input.keyword
 {
-    font-size: 88%;
-    line-height: 26px;
-    padding: 0 3px;
-}
-#search-container ul li input
-{
-    width: 160px
+    width: 250px
 }
 
 /***********************

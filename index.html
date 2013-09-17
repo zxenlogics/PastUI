@@ -42,12 +42,14 @@
         <div id="index-page" class="main-content">
             <div class="main wrapper clearfix">
 
-
                 <div id="start-menu">
                     <ul class="apps">
-                        <li class="pac" data-app="pac" title="PAC Log Entries"><a href="#"><img src="img/pac-logo-64x64.png" alt="pac logo"></a></li>
-                        <li class="samples" data-app="samples" title="eSamples Log Entries"><a href="#"><img width="64" height="64" src="img/sample-logo.png" alt="sample logo"></a></li>
-                        <li class="ccui selected" data-app="ccui" title="CCUI Log Entries"><a href="#"><img src="img/ccui-logo-64x64.png" alt="ccui logo"></a></li>
+                        <li class="pac" data-app="pac" title="PAC Log Entries">
+                            <a href="#"><img src="img/pac-logo-64x64.png" alt="pac logo"></a></li>
+                        <li class="samples" data-app="samples" title="eSamples Log Entries">
+                            <a href="#"><img width="64" height="64" src="img/sample-logo.png" alt="sample logo"></a></li>
+                        <li class="ccui selected" data-app="ccui" title="CCUI Log Entries">
+                            <a href="#"><img src="img/ccui-logo-64x64.png" alt="ccui logo"></a></li>
                     </ul>
                     <div id="pac-options" data-app="pac" class="log-options ">
                         <ul>
@@ -113,47 +115,10 @@
         </script>
 
         <script>
-            function wireUpStartMenu()
-            {
-                $('ul.apps li').click(function ()
-                {
-                    var app = $(this).attr('data-app');
-           
-                    $('ul.apps li').each(function ()
-                    {
-                        $(this).removeClass('selected');
-                    })
-                    $(this).addClass('selected').fadeIn(1000);	;
-                    $('.log-options').each(function ()
-                    {
-                        $(this).removeClass('selected');
-                    });
-                    $("div[data-app='" + app + "']").addClass('selected').css("display","none").fadeIn(600);	;
-                });
-            }
-
             $(function ()
             {
                 $('#start-menu').fadeIn(1000);
-                wireUpStartMenu();
-
-                $('ul.apps li').hover(function ()
-                {
-                    var app = $(this).attr('data-app');
-                    $('.app-info').html('View ' + app + ' Logs');
-
-                });
-
-                //$('ul.apps li').hover(function ()
-                //{
-                //    var app = $(this).attr('data-app');
-                //    $('.app-info').html('View ' + app + ' Logs');
-
-                //});
-                $( document ).tooltip();
             });
-
-
         </script>
     </body>
 </html>
