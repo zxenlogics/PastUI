@@ -42,11 +42,45 @@
         <div class="main-content">
             <div class="main wrapper clearfix">
                 <!-- render body here -->
+
+            <div id="search-container">
+                <ul>
+                    <li>
+                        <input class="keyword" type="text" placeholder="type a keyword" />
+                    </li>
+                    <li>
+                        <select>
+                        <option>All</option>
+                        <option>Info</option>
+                        <option>Warning</option>
+                        <option>Error</option>
+                        </select>
+                    </li>
+                    <li><input type="date" placeholder="9/16/2013" /></li>
+                    <li><input type="date" placeholder="9/17/2013" /></li>    
+                </ul>
+                <img class="go" src="img/go.png" alt="go">
+            </div>
+
                 <div class="report-container">
-                    <div><p>PAC Report</p></div>
-                    <div><p>Samples Report</p></div>
-                    <div><p>CCUI Report</p></div>
-                    <div><p>General Statistics for today</p></div>
+                    <div class="pac">
+                        <h2>PAC Health Report for 9/17/2013</h2>
+                        <ul class="no-list-style">
+                            <li>Successful Logins: 2514</li>
+                            <li>Failed Logins: 256</li>
+                            <li>Failed Registration: 22</li>
+                        </ul>
+                    </div>
+                    <div class="samples">
+                        <h2>eSamples Health Report for 9/17/2013</h2>
+                        <ul class="no-list-style">
+                            <li>Total errors today: 2514</li>
+                            <li>Failed SRF Submission: 256</li>
+                            <li>Total Order Today: 22</li>
+                        </ul>                    
+                    </div>
+                    <div class="ccui"><h2>CCUI Health Report for 9/17/2013</h2></div>
+                    <div class="general"><h2>General Health Statistics for 9/17/2013</h2></div>
                 </div>
 
                 <!-- render body here -->

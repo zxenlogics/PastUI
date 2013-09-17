@@ -60,7 +60,6 @@
 #search-container ul li
 {
   float: left;
-  /* border-right: 1px solid silver; */
   width: auto;
   height: 25px;
   margin: 0;
@@ -87,7 +86,33 @@
 {
     width: 250px
 }
-
+.search-context {        
+    float: right;
+    height: 29px;
+    margin: -28px 39px 0 2px;
+    padding: 0;
+    width: 215px;    
+    color: #4C4532;
+}
+.search-context ul {
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+    width: 100%;  
+}
+.search-context ul li {
+    float: left;
+    width: auto;
+    height: 25px;
+    margin: 0;
+    padding: 0 5px 1px 2px;
+    line-height: 25px;
+    text-align: right;
+}
+.search-context ul li span {
+    float: left;    
+    width: 60px;
+}
 /***********************
     About    
 ************************/
@@ -179,7 +204,7 @@
     height: 600px;
     margin: 20px auto;
     padding: 0;
-    outline: 1px dotted silver;
+    box-shadow: 0 0 11px #1B1A15;
 }
 .report-container > div
 {
@@ -189,10 +214,15 @@
     outline: 1px solid #DDD;
     float: left;
 }
-.report-container div:first-child { background: #7DC322; }
+.report-container div.pac { background: #817E70; }
+.report-container div.samples { background: #EBEAE1; }
+.report-container div.ccui { background: #A6AAC3; }
+.report-container div.general { background: #667F55; }
+.report-container div h2 { margin: 1em 1em;}
 .report-container > div:hover
 {
-    background: #EBEAE1;
+    background: #1B1A15;
+    color: #fff;
 }
 
 /*************** JQGrid styles copied from ui.jqgrid.css ********/

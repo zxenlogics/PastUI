@@ -15,25 +15,7 @@
         <link rel="stylesheet" href="css/past.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <script src="js/vendor/jquery-1.10.1.min.js"></script>
-        
-        <script>
-            var appSelection = function ()
-            {
-                alert('loaded');
-            };
-
-            $(function ()
-            {
-                $('#application-select').click(function ()
-                {
-                    $(this).html($(this).attr('data-index'));
-                });
-
-                $('#grid-container').fadeIn(1500);
-            });
-
-        </script>
+        <script src="js/vendor/jquery-1.10.1.min.js"></script>        
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -79,15 +61,16 @@
                     <li><input type="date" placeholder="9/16/2013" /></li>
                     <li><input type="date" placeholder="9/17/2013" /></li>    
                 </ul>
-
-                <!--<ul>
-                    <li><span id="application-select" data-index="eSamples">Pac</span></li>
-                    <li><span>Prod</span></li>
-                    <li> <input type="text" id="keyword" /> </li>
-                    <li><datalist></datalist></li>
-                </ul>-->
                 <img class="go" src="img/go.png" alt="go">
             </div>
+            <div class="search-context">
+                <ul>
+                    <li>Context: </li>
+                    <li><span id="application-toggle" data-index="eSamples">Pac</span></li>
+                    <li><span id="environment-toggle">Stg</span></li>                    
+                </ul>
+            </div>
+
             <div id="grid-container">
  
                 <table>
@@ -232,5 +215,20 @@
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+
+        <script>
+
+            $(function ()
+            {
+                $('#application-toggle').click(function ()
+                {
+                    $(this).html($(this).attr('data-index'));
+                });
+
+                $('#grid-container').fadeIn(1500);
+            });
+
+        </script>
+
     </body>
 </html>
